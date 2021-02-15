@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap");
+body {
+  background-color: #f7f7e8;
+  height: 130vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-img {
+  height: 50px;
+  width: 50px;
+}
+
+.header-headline {
+  margin-left: -10%;
+  color: #383E56;
+  font-family: 'Monoton', cursive;
+}
+
+.header a {
+  text-decoration: none;
+  color: #383E56;
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.sec-head, .sec2-jahr, .sec2-versteuerndes, .sec2-art, .sec3-erLabel {
+  font-family: 'Averia Serif Libre', cursive;
+  padding-left: 5%;
+}
+
+.sec-para {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .8em;
+  font-weight: 600;
+  padding-left: 5%;
+}
+
+.sec-div, .divErgebnis {
+  background-color: #557174;
+  width: 89vw;
+  font-family: 'Averia Serif Libre', cursive;
+  margin-left: 5%;
+  padding: 10px 0;
+  color: #f7f7e8;
+}
+
+.sec2 {
+  height: 60vh;
+  margin: 1% 5% 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec2-imgRechner {
+  height: 80vh;
+  width: 30vw;
+}
+
+.sec2-form, .sec3-form2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (100px)[6];
+      grid-template-rows: repeat(6, 100px);
+  color: #f7f7e8;
+  background-color: #0d335d;
+  margin-left: 1%;
+  width: 70vw;
+}
+
+.sec2-jahr, .sec2-versteuerndes, .sec2-art, .sec3-erLabel {
+  padding-left: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2em;
+}
+
+.sec2-select, .sec2-einkommen, .sec3-erEinkommen, .sec2-select2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 40%;
+  height: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2%;
+}
+
+.sec2-versteuerndes {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+}
+
+.sec2-einkommen, .sec3-erEinkommen {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+}
+
+.sec2-euro {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.sec2-art {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/4/2;
+}
+
+.sec2-ra1, .sec2-ra2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2%;
+}
+
+.sec2-einzel, .sec2-zusammen {
+  font-family: 'Averia Serif Libre', cursive;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 8%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.sec2-ra2 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.sec2-zusammen {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.sec2-select2 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 4/2/5/3;
+}
+
+.sec2-berechnen {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 5/2/6/3;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-family: 'Averia Serif Libre', cursive;
+  background-color: #557174;
+  color: #f7f7e8;
+  padding: 6px 30px;
+  border: #557174 solid 1px;
+  border-radius: 5px;
+  margin-left: 2%;
+}
+
+.sec2-berechnen:hover {
+  background-color: #f7f7e8;
+  color: #557174;
+}
+
+.divErgebnis {
+  margin: 1% 0 0 36.2%;
+  width: 54.2vw;
+  height: 3vh;
+  padding: 1% 2%;
+  font-size: 1.2em;
+}
+
+.sec3 {
+  height: 10vh;
+  margin: 1% 0% 0 38%;
+}
+
+.sec3-form2 {
+  margin-left: 34.6%;
+  width: 58.1vw;
+  -ms-grid-rows: (100px)[3];
+      grid-template-rows: repeat(3, 100px);
+}
+
+.sec3-erEinkommen {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.footer {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: .7em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer-symbol {
+  margin-left: -10%;
+}
+/*# sourceMappingURL=style.css.map */

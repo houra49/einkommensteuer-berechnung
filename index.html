@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/img/images (2).png" alt="" class="header-img">
+        <h4 class="header-headline">DREAMSTIME.DE</h4>
+        <a href="#">Home</a>
+        <a href="#">Alle Online-Rechner (A bis Z)</a>
+        <a href="#">Alle Themen (Geldanlage, Steuern, Kredit, ...)</a>
+    </header>
+    <!------------------------------------------------------------------------------------------->
+    <!----------------------------------------section-1------------------------------------------>
+    <section class="sec">
+        <h1 class="sec-head">Einkommen­steuer­rechner</h1>
+        <p class="sec-para">Der Einkommensteuerrechner ermittelt aus dem zu versteu­ern­den Einkommen die tarif­liche
+            Einkommen­steuer
+            für 2021, 2020, 2019.</p>
+        <div class="sec-div">Einkommensteuerrechner</div>
+    </section>
+    <!------------------------------------------------------------------------------------------->
+    <!----------------------------------------section-2------------------------------------------>
+    <section class="sec2">
+        <img src="assets/img/einkommensteuer-rechner.jpg" alt="" class="sec2-imgRechner">
+        <form action="" class="sec2-form">
+            <label for="" class="sec2-jahr">Jahr:</label>
+            <select name="" id="selectJahr" class="sec2-select">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            <label for="" class="sec2-versteuerndes">Zu versteuerndes Einkommen:</label>
+            <input type="number" name="nummer" id="einkommen" class="sec2-einkommen"><label for=""
+                class="sec2-euro">Euro</label>
+            <label for="" class="sec2-art">Art der Veranlagung:</label>
+            <input type="radio" name="veranlagung" id="einzelVeranlagung" class="sec2-ra1" value="" checked>
+            <label for="" class="sec2-einzel">Einzelveranlagung</label>
+            <input type="radio" name="veranlagung" id="zusammenVeranlagung" class="sec2-ra2" value="" checked>
+            <label for="" class="sec2-zusammen">Zusammenveranlagung</label>
+            <button type="button" id="berechnen" class="sec2-berechnen" onclick="rechnen()">Berechnen</button>
+        </form>
+    </section>
+    <!------------------------------------------------------------------------------------------->
+    <!----------------------------------------section-3------------------------------------------>
+    <div class="divErgebnis">Ergebnis</div>
+    <section class="sec3">
+        <h1 class="sec3-erLabel">EinkommenSteuer:</h1>
+        <div id="einkommenSteuer" class="sec3-erEinkommen">0</div>
+    </section>
+    <!------------------------------------------------------------------------------------------->
+    <!------------------------------------------footer------------------------------------------->
+    <footer class="footer">
+        <p>COPYRIGHT</p>
+        <p class="footer-symbol">© </p>
+        <p>2019-2021</p>
+        <p>finanz-tools.de </p>
+        <p>| Alle Rechte vorbehalten.</p>
+        <p>| Alle Angaben ohne Gewähr.</p>
+    </footer>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>
